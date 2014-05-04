@@ -19,7 +19,7 @@ $config['tpl_default']			= 'template/default';
 | Default css files
 |--------------------------------------------------------------------------
 | Array key				Filename of the stylesheet file
-| Array value			Type of provided stylesheet: all / screen / print
+| Array value				Type of provided stylesheet: all / screen / print
 */
 $config['tpl_default_css']		= array(
 	'template.css'		=> 'all'
@@ -30,7 +30,7 @@ $config['tpl_default_css']		= array(
 | Default javascript files
 |--------------------------------------------------------------------------
 | 'TRUE'				Inserts a javascript file into the HEADER section
-| 'FALSE'	(default)	Inserts a javascript file into the FOOTER section
+| 'FALSE'	(default)		Inserts a javascript file into the FOOTER section
 */
 $config['tpl_default_js']		= array(
 	'appstrap.min.js'	=> TRUE,
@@ -42,7 +42,7 @@ $config['tpl_default_js']		= array(
 | Title separator
 |--------------------------------------------------------------------------
 */
-$config['tpl_title_separator']	= ' | ';
+$config['tpl_title_separator']		= ' | ';
 
 /*
 |--------------------------------------------------------------------------
@@ -52,10 +52,10 @@ $config['tpl_title_separator']	= ' | ';
 $config['tpl_dir_assets']		= 'assets/';
 $config['tpl_dir_avatars']		= 'images/avatars/';
 $config['tpl_dir_products']		= 'images/products/';
-$config['tpl_dir_products_l']	= 'images/products/large/';
-$config['tpl_dir_products_m']	= 'images/products/medium/';
-$config['tpl_dir_products_s']	= 'images/products/small/';
-$config['tpl_dir_products_t']	= 'images/products/thumbs/';
+$config['tpl_dir_products_l']		= 'images/products/large/';
+$config['tpl_dir_products_m']		= 'images/products/medium/';
+$config['tpl_dir_products_s']		= 'images/products/small/';
+$config['tpl_dir_products_t']		= 'images/products/thumbs/';
 $config['tpl_dir_uploads']		= 'uploads/';
 
 
