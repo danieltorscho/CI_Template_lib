@@ -4,33 +4,16 @@
  * CLASS TEMPLATE
  * https://github.com/danieltorscho/CI_Template_lib
  *
- * Simple template library with some core functionalities to simplify development process for your web application.
+ * Simple template library with some core functionalities to simplify development process for CodeIgniter 2.x
  *
- * @package			CodeIgniter
+ * @package	CodeIgniter
  * @subpackage	CodeIgniter Library
- * @author			Daniel Torscho
- * @copyright		Copyright (c) 2014, DanielTorscho.com
- * @license			The MIT License (MIT) - https://github.com/danieltorscho/CI_Template_lib/blob/master/LICENSE
- * @link			  https://github.com/danieltorscho/CI_Template_lib
+ * @author	Daniel Torscho
+ * @copyright	Copyright (c) 2014, DanielTorscho.com
+ * @license	The MIT License (MIT) - https://github.com/danieltorscho/CI_Template_lib/blob/master/LICENSE
+ * @link	https://github.com/danieltorscho/CI_Template_lib
  *
- * @docs			https://github.com/danieltorscho/CI_Template_lib/blob/master/README.md
- *
- * Custom page title:
- * 		$this->template->title('Product page');
- *
- * Custom breadcrumbs creation:
- * 		$this->template->crumb('E-commerce', 'ecommerce/index');
- * 		$this->template->crumb('Products', 'ecommerce/products');
- * 		$this->template->crumb('Product #391');
- *
- * Custom javascript file loading:
- * 		$this->template->script('plugin/head.js', TRUE); // Loads into the head section
- * 		$this->template->script('footer.js'); // Loads into the footer section before closing </body> tag
- *
- * Custom css file loading:
- * 		$this->template->css('print.css', 'print');
- *
- * TODO: Read configuration file app/config/template.php and extract all information from it
+ * @docs	https://github.com/danieltorscho/CI_Template_lib/blob/master/README.md
  */
 class Template{
 
