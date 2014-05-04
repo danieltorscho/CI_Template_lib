@@ -15,10 +15,10 @@ Template library handle most of the views logic on it's own. With simple `$this-
 Documentation
 ===============
 
-Load custom view file:
+Load custom view file:<br/>
   `$this->template->load('path/to/view.php');`
   
-Load custom view file within a custom template file
+Load custom view file within a custom template file:<br/>
   `$this->template->load('template/login', 'user/login/form');`
 
 Set custom page title:<br/>
