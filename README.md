@@ -5,12 +5,13 @@ Simple template library with some core functionalities to simplify development p
 
 How to use
 ===============
-1. Extract all files to your project root project.
+1. Extract all files to your project root project. On fresh CI2 installation, make sure to overwrite all files.
 2. Open `app/config/autoload.php`, add `'template'` to `$autoload['libraries']` and `$autoload['config']`
 2. Edit your template configuration file `application/config/template.php`
 3. Navigate to `yourwebsite.dev/index.php/welcome`
 
-Template library handle most of the views logic on it's own. With simple `$this->template->load();` call inside the controller's method, it will automatically creates a `pagetitle`, `pagename`, `scripts`, `stylesheets` and subload a corresponding view file `controller/method.php` if nothing was provided in `load()` function.
+Template library handles most of the views logic on it's own. With simple `$this->template->load();` call inside the controller's method, it will automatically creates a `pagetitle`, `pagename`, `scripts`, `stylesheets` and subload a corresponding view file `controller/method.php` if nothing was provided in `load()` function.
+
 
 Documentation
 ===============
