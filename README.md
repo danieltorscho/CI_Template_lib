@@ -1,7 +1,7 @@
 CI_Template_lib
 ===============
 
-Simple template library with some core functionalities to simplify development process
+Simple template library with some core functionalities to simplify development process for CodeIgniter 2.x
 
 How to use
 ===============
