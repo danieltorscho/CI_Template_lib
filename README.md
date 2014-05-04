@@ -5,13 +5,21 @@ Simple template library with some core functionalities to simplify development p
 
 How to use
 ===============
-1. Autoload your template config, template library. Url helper is optional to make it work with provided `app/views/template/default.php`
+1. Extract all files to your project root project.
+2. Open `app/config/autoload.php`, add `'template'` to `$autoload['libraries']` and `$autoload['config']`
 2. Edit your template configuration file `application/config/template.php`
-3. Create a `app/controllers/Dashboard.php` and `app/views/dashboard/index.php`
-4. Inside your controller's `index()` method, call `$this->template->load();` to autoload previously created view file
+3. Navigate to `yourwebsite.dev/index.php/welcome`
+
+Template library handle most of the views logic on it's own. With simple `$this->template->load();` call inside the controller's method, it will automatically creates a `pagetitle`, `pagename`, `scripts`, `stylesheets` and subload a corresponding view file `controller/method.php` if nothing was provided in `load()` function.
 
 Documentation
 ===============
+
+Load custom view file:
+  `$this->template->load('path/to/view.php');`
+  
+Load custom view file within a custom template file
+  `$this->template->load('template/login', 'user/login/form');`
 
 Set custom page title:<br/>
   `$this->template->title('Product page');`
