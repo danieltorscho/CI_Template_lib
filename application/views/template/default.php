@@ -2,10 +2,10 @@
 /**
  * @var	string		$tpl_pagetitle		Page title mixed up with Sitename from config file
  * @var	string		$tpl_pagename		Page name
- * @var	array		  $tpl_scripts_head	Header javascript files
- * @var	array		  $tpl_scripts_foot	Footer javascript files designated to place before </body> tag
- * @var	array		  $tpl_stylesheets	Stylesheet files with view type param
- * @var	string		$tpl_view			Main content of the subview where it should be loaded to
+ * @var	array		$tpl_scripts_head	Header javascript files
+ * @var	array		$tpl_scripts_foot	Footer javascript files designated to place before </body> tag
+ * @var	array		$tpl_stylesheets	Stylesheet files with view type param
+ * @var	string		$tpl_view		Main content of the subview where it should be loaded to
  */
 ?><!DOCTYPE html>
 <html lang="en">
