@@ -144,6 +144,11 @@ class Template{
 	 */
 	public function title( $string = '' )
 	{
+		// Check if sitename is available, if not, create a CMS string
+		if( $this->CI->config->item('tpl_sitename') == '' ){
+			$this->CI->config->set_item('tpl_sitename', 'CMS');
+		}
+
 		// Check if string is empty or not
 		if( $string == '' ){
 
