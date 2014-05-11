@@ -1,16 +1,16 @@
 CI_Template_lib
 ===============
 
-Simple template library with some core functionalities to simplify the development process for CodeIgniter 2.x
+Simple template library with some core functionalities to simplify the development process for CodeIgniter 2.x.
 
 How to use
 ===============
-1. Extract all files to your project root project. On fresh CI2 installation, make sure to overwrite all files.
-2. Open `app/config/autoload.php`, add `'template'` to `$autoload['libraries']` and `$autoload['config']`
-2. Edit your template configuration file `application/config/template.php`
-3. Navigate to `yourwebsite.dev/index.php/welcome`
+1. Extract all files to your project root directory. Make sure to overwrite all files if prompted.
+2. Open `app/config/autoload.php`, add `'template'` to `$autoload['libraries']` and `$autoload['config']`.
+2. Edit your template configuration file `application/config/template.php`.
+3. Navigate to `yourwebsite.dev/index.php/welcome`.
 
-Template library handles most of the views logic on it's own. With simple `$this->template->load();` call inside the controller's method, it will automatically creates a `pagetitle`, `pagename`, `scripts`, `stylesheets` and subload a corresponding view file `controller/method.php` if nothing was provided in `load()` function.
+Template library handles most of the views logic on its own. With simple `$this->template->load();` call inside the controller's method, it will automatically create `pagetitle`, `pagename`, `scripts`, `stylesheets` variables and subload a corresponding subview file `controller/method.php` if nothing was provided in `load()` function.
 
 
 Documentation
@@ -30,11 +30,11 @@ Set custom breadcrumbs:<br/>
   `$this->template->crumb('Products', 'ecommerce/products');`<br/>
   `$this->template->crumb('Product #391');`
 
-Add custom javascript file loading:<br/>
+Add custom JavaScript file loading:<br/>
   `$this->template->script('plugin/head.js', TRUE)`<br/>
   `$this->template->script('footer.js');`
 
-Add custom css file loading:<br/>
+Add custom CSS file loading:<br/>
   `$this->template->css('print.css', 'print');`
   
 Set custom variables:<br/>
