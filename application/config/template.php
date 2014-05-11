@@ -1,14 +1,14 @@
 <?php defined( 'BASEPATH' ) OR exit( 'No direct script access allowed' );
 /*
 | -------------------------------------------------------------------
-|  Global website settings
+|  Global Website Settings
 | -------------------------------------------------------------------
 */
 $config['tpl_sitename']			= 'Website name';
 
 /*
 |--------------------------------------------------------------------------
-| Default master layout
+| Default Master Layout
 |--------------------------------------------------------------------------
 | 'template/default'	Produces app/views/template/default.php
 */
@@ -16,9 +16,9 @@ $config['tpl_default']			= 'template/default';
 
 /*
 |--------------------------------------------------------------------------
-| Default css files
+| Default CSS Files
 |--------------------------------------------------------------------------
-| Array key				Filename of the stylesheet file
+| Array key				Name of the stylesheet file
 | Array value				Type of provided stylesheet: all / screen / print
 */
 $config['tpl_default_css']		= array(
@@ -29,8 +29,8 @@ $config['tpl_default_css']		= array(
 |--------------------------------------------------------------------------
 | Default javascript files
 |--------------------------------------------------------------------------
-| 'TRUE'				Inserts a javascript file into the HEADER section
-| 'FALSE'	(default)		Inserts a javascript file into the FOOTER section
+| 'TRUE'				Inserts a javascript file into the HEAD element (<head>)
+| 'FALSE'	(default)		Inserts a javascript file into the FOOTER section (just before </body>)
 */
 $config['tpl_default_js']		= array(
 	'appstrap.min.js'	=> TRUE,
@@ -57,9 +57,6 @@ $config['tpl_dir_products_m']		= 'images/products/medium/';
 $config['tpl_dir_products_s']		= 'images/products/small/';
 $config['tpl_dir_products_t']		= 'images/products/thumbs/';
 $config['tpl_dir_uploads']		= 'uploads/';
-
-
-
 
 /* End of file template.php */
 /* Location: ./application/config/template.php */
