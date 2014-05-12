@@ -181,7 +181,16 @@ class Template{
 	}
 
 
-	public function crumb( $title = '', $link = '' )
+	/**
+	 * Handle the breadcrumbs creations of segmented items
+	 *
+	 * @param string $title		Title of the segmented breadcrumb
+	 * @param string $link		URL Link
+	 * @param bool   $extend	Whenever you need to extend the base crumbs. By default FALSE (turned off)
+	 *
+	 * @return $this
+	 */
+	public function crumb( $title = '', $link = '', $extend = FALSE )
 	{
 		// If no title provided, load the default values from class and method names
 		if( $title == '' ){
@@ -192,6 +201,15 @@ class Template{
 				$this->breadcrumbs[ $this->CI->router->class . '/' . $this->CI->router->method ] = humanize($this->CI->router->method);
 			}
 		}else{
+			if( $extend === TRUE ){
+				// Add first segmend based on class name
+				$this->breadcrumbs[ $this->CI->router->class ] = humanize($this->CI->router->class);
+				// Append a method segment only if method name isn't equal to index()
+				if( $this->CI->router->method != 'index' ){
+					$this->breadcrumbs[ $this->CI->router->class . '/' . $this->CI->router->method ] = humanize($this->CI->router->method);
+				}
+			}
+
 			// Add provided segment
 			$this->breadcrumbs[ $link ] = $title;
 		}
@@ -236,6 +254,8 @@ class Template{
 	 *
 	 * @param string $view   View file to display (Subview)
 	 * @param bool   $return Return a rendered output by default
+	 *
+	 * @return mixed
 	 */
 	public function load( $view = '', $return = FALSE )
 	{
@@ -249,6 +269,6 @@ class Template{
 			$view = $this->CI->router->class . '/' . $this->CI->router->method;
 		}
 
-		$this->render($this->template_default, $view, $return);
+		return $this->render($this->template_default, $view, $return);
 	}
 }
