@@ -99,10 +99,10 @@ class Template{
 	}
 
 	/**
-	 * Function which populate the template's data. It sets the items so they can be easily
-	 * accessed inside the all subloaded view files
+	 * Function which populates the template's data. It sets the items so they can be easily
+	 * accessed inside all subloaded view files.
 	 *
-	 * @param string $key   Make the variables accessible inside the subloaded views as: $name
+	 * @param string $key   Make the variables accessible inside the subloaded views as: $name.
 	 * @param mixed  $value Returns a value.
 	 *
 	 * @return $this
@@ -113,10 +113,10 @@ class Template{
 	}
 
 	/**
+	 * Add custom script to current view.
+	 * 
 	 * @param string $src
 	 * @param bool   $header
-	 *
-	 * @return $this
 	 */
 	public function script( $src = '', $header = FALSE )
 	{
@@ -131,6 +131,12 @@ class Template{
 
 	}
 
+	/**
+	 * Add custom stylesheet to current view.
+	 *
+	 * @param string $src
+	 * @param string $type
+	 */
 	public function css( $src = '', $type = '' )
 	{
 		$this->stylesheets[ $src ] = $type;
@@ -138,13 +144,13 @@ class Template{
 	}
 
 	/**
-	 * Work Pagetitle and Pagename out and creates two variables for shared views
+	 * Works the Page Title and the Page Name out and creates two variables for shared views.
 	 *
-	 * @param string $string Catches the title, if empty, creates from sitename
+	 * @param string $string Catches the title, if empty, creates from `tpl_sitename`.
 	 */
 	public function title( $string = '' )
 	{
-		// Check if sitename is available, if not, create a CMS string
+		// Check if `tpl_sitename` is available, if not, create a "CMS" string
 		if( $this->CI->config->item('tpl_sitename') == '' ){
 			$this->CI->config->set_item('tpl_sitename', 'CMS');
 		}
@@ -152,7 +158,7 @@ class Template{
 		// Check if string is empty or not
 		if( $string == '' ){
 
-			// If method name is index(), then skip concatenating the method name
+			// If method name is other than "index", then concatenate the method name
 			if( $this->CI->router->method == 'index' ){
 				$this->title = $this->CI->router->class;
 			}else{
@@ -162,7 +168,7 @@ class Template{
 			// Make newly created title readable
 			$this->title = humanize($this->title);
 
-			// Catche the pagetitle at the current state and set it to the pagename
+			// Catch the pagetitle at the current state and set it to the `tpl_pagename`
 			$this->set_item('tpl_pagename', $this->title);
 
 			// Mix pagetitle with sitename properly
@@ -194,7 +200,7 @@ class Template{
 	{
 		// If no title provided, load the default values from class and method names
 		if( $title == '' ){
-			// Add first segmend based on class name
+			// Add first segment based on class name
 			$this->breadcrumbs[ $this->CI->router->class ] = humanize($this->CI->router->class);
 			// Append a method segment only if method name isn't equal to index()
 			if( $this->CI->router->method != 'index' ){
