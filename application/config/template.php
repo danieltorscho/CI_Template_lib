@@ -44,19 +44,5 @@ $config['tpl_default_js']		= array(
 */
 $config['tpl_title_separator']		= ' | ';
 
-/*
-|--------------------------------------------------------------------------
-| Default folder structure
-|--------------------------------------------------------------------------
-*/
-$config['tpl_dir_assets']		= 'assets/';
-$config['tpl_dir_avatars']		= 'images/avatars/';
-$config['tpl_dir_products']		= 'images/products/';
-$config['tpl_dir_products_l']		= 'images/products/large/';
-$config['tpl_dir_products_m']		= 'images/products/medium/';
-$config['tpl_dir_products_s']		= 'images/products/small/';
-$config['tpl_dir_products_t']		= 'images/products/thumbs/';
-$config['tpl_dir_uploads']		= 'uploads/';
-
 /* End of file template.php */
 /* Location: ./application/config/template.php */
