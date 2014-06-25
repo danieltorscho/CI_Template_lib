@@ -1,0 +1,10 @@
+{
+	"name" : "danieltorscho/CI_Template_lib",
+	"description" : "Simple template library with some core functionalities to simplify the development process for CodeIgniter 2.x",
+	"require": {
+		"php": ">=5.2.4"
+	},
+	"require-dev": {
+		
+	}
+}
