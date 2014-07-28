@@ -1,4 +1,4 @@
-CodeIgniter 2.x Simple Template Library
+CodeIgniter 2+ Simple Template Library
 ===============
 
 Simple template library with some core functionalities to simplify the development process for CodeIgniter 2.x.
