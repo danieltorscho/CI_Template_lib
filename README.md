@@ -10,7 +10,9 @@ How to use
 2. Edit your template configuration file `application/config/template.php`.
 3. Navigate to `yourwebsite.dev/index.php/welcome`.
 
-Template library handles most of the views logic on its own. With simple `$this->template->load();` call inside the controller's method, it will automatically create `pagetitle`, `pagename`, `scripts`, `stylesheets` variables and subload a corresponding subview file `controller/method.php` if nothing was provided in `load()` function.
+Template library handles most of the views logic on its own.
+
+With simple `$this->template->load();` call inside the controller's method, it will automatically create `pagetitle`, `pagename`, `scripts`, `stylesheets` variables and subload a corresponding subview file `controller/method.php` if nothing was provided in `load()` function.
 
 
 Documentation
